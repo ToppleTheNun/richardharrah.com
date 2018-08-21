@@ -1,0 +1,15 @@
+language: node_js
+script:
+  - commitlint-travis
+  - yarn build
+deploy:
+  provider: s3
+  access_key_id: AKIAIXIG25H3ZZUIM6YQ
+  secret_access_key:
+    secure: Vx1HigLkUlwvlmS2eLDclmwY1PMwbFME42+2lJDHPUl4NwkUb//WXDfgv+3YXjo/xcVYeQ7OFfICWvBke71pLz9lG24IQFSP7kouRZCOQoUk+bYGfLDybJ5u7MoaoNOpHGZsI16meCAndiYEQgyqzDp3XKsupOOpXabb3B41prEw2Q3CRM2cMyenlui9O7+u+FIGRbvdJJsKfAbg5eykpO4xMtdnoNUSNu910QN6S2INYoO2A/96nKXqf3vSiX2t/LUljOUa5waSbsEUh+uiyttF4YdUw7uQ+QoOc6LjOeP3AqcBRUWrS99aWISfa/XSJAwUGkr2KRkySFoLqmbp09VR7Y/LpAeEA0uZujHk5Y9HcU91kqESY3H/uPfYpJSVsizHF4VCHpC/DyQtkbCY4+db5UZRcqhuhdczokxAPENjwb1TFpirc816hIIynP2Ez1CEinQ7bMWeypUrik82l/If7k0XUS7zWFgrEBSnJRps/x4lOAIQQW4QFaBoBiuY/rP9VpdQbYHWav9csilwO2sXpQBxaHgNlWfGY7/J+1FzUmbRYDsbEZTxu5h5qLYopCFXYt4yk4hZ986dG+taXSoK89MXYu4+kQD7guz2U9nQmyeaTKeLlC0vGm6xukts5Z4svCAIO/yXbw1fiBvT70MbsZ6FvNpj5JSdFXC8/z0=
+  bucket: richardharrah.com
+  local-dir: dist
+  acl: public_read
+  on:
+    repo: Nunnery/richardharrah.com
+    branch: master
