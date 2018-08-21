@@ -1,0 +1,37 @@
+{
+  "name": "richardharrah.com",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Nunnery/richardharrah.com",
+  "author": "Richard Harrah <topplethenunnery@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "@commitlint/travis-cli": "^7.0.0",
+    "babel-preset-env": "^1.7.0",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3",
+    "parcel-bundler": "^1.9.7",
+    "prettier": "1.14.2",
+    "pretty-quick": "^1.6.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0",
+    "wingcss": "^1.0.0-beta"
+  },
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "commit": "git-cz",
+    "commitmsg": "commitlint -E GIT_PARAMS",
+    "precommit": "pretty-quick --staged",
+    "start": "parcel src/index.html"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}

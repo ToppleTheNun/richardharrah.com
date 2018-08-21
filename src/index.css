@@ -1,0 +1,53 @@
+body {
+  background: #e7e7e7;
+  color: #202020;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.nav {
+  margin-top: 5rem;
+}
+
+.nav-item a {
+  color: #616161;
+  text-decoration: none;
+  font-family: 'Consolas', 'Monaco', 'Menlo', monospace;
+}
+
+.nav-item a:hover {
+  cursor: pointer;
+  color: #4d4a4a;
+  border: none;
+}
+
+.hero {
+  color: #363636;
+  height: 80vh;
+}
+
+.hero div {
+  margin-bottom: 5rem;
+}
+
+.hero h3 {
+  font-family: 'Edelsans', sans-serif;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+.hero h5 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: 200;
+}
+
+.header {
+  font-weight: 200;
+}
+
+.content {
+  font-size: 1.8rem;
+}
