@@ -1,41 +1,13 @@
-import type { MetaFunction } from "@remix-run/node";
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
+import { LayoutWithSiteFooter } from "~/components/layouts/LayoutWithSiteFooter.tsx";
+import { H1, Lead } from "~/components/typography.tsx";
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <LayoutWithSiteFooter>
+      <div className="pb-8 space-y-2">
+        <H1>Richard Harrah</H1>
+        <Lead>Software Engineer driven to learn and relentlessly improve.</Lead>
+      </div>
+    </LayoutWithSiteFooter>
   );
 }
