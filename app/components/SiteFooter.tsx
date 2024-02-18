@@ -43,7 +43,7 @@ export function SiteFooter() {
           </a>
           .
         </p>
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+        <div className="flex items-center justify-between space-x-2 md:justify-end">
           <nav className="flex items-center">
             <NavLink
               to={siteConfig.links.github}
