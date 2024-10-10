@@ -31,7 +31,7 @@
     "@remix-run/express": "2.6.0",
     "@remix-run/node": "2.6.0",
     "@remix-run/react": "2.6.0",
-    "@sentry/remix": "7.101.1",
+    "@sentry/remix": "7.119.2",
     "class-variance-authority": "0.7.0",
     "clsx": "2.1.0",
     "compression": "1.7.4",
